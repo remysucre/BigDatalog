@@ -1,3 +1,4 @@
 database({arc(From: integer, To: integer)}).
-reach(X) <- arc(30,X).
-reach(X) <- reach(Z), arc(Z,X).
+
+reach(B) <- B=30.
+reach(B) <- reach(A), arc(A,B).
