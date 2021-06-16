@@ -27,7 +27,7 @@ do
 		do
 			echo " BENCHMARKING $P on $D" ;
 			qry $P &&
-			runbd $P-opt $Query $D # &&
-			# runbd $P $Query $D 
+			runbd $P-opt $Query $D &&
+			runbd $P $Query $D 
 		done
 done
