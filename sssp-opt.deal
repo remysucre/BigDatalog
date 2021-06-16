@@ -1,5 +1,5 @@
 database({arc(From: integer, To: integer, D: integer)}).
 
-leftLinearSP(B,min<C>) <- mminleftLinearSP(B,C).
-mminleftLinearSP(B,mmin<C>) <- B=12, C=0.
-mminleftLinearSP(B,mmin<D>) <- mminleftLinearSP(C,D1), arc(C,B,D2), D=D1+D2.
+sssp(B,min<C>) <- msp(B,C).
+msp(B,mmin<C>) <- B=30, C=0.
+msp(B,mmin<D>) <- msp(C,D1), arc(C,B,D2), D=D1+D2.

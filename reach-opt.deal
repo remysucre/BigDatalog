@@ -1,4 +1,4 @@
 database({arc(From: integer, To: integer)}).
 
-reach(B) <- B=30.
+reach(B) <- B=12.
 reach(B) <- reach(A), arc(A,B).
